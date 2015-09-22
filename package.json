@@ -1,0 +1,24 @@
+{
+  "name": "then-nodeify",
+  "version": "1.0.0",
+  "description": "denodeify from then/Promise, all by itself",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TehShrike/then-nodeify.git"
+  },
+  "keywords": [
+    "promise",
+    "then",
+    "denodeify"
+  ],
+  "author": "TehShrike",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/TehShrike/then-nodeify/issues"
+  },
+  "homepage": "https://github.com/TehShrike/then-nodeify#readme"
+}
