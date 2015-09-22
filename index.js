@@ -1,5 +1,3 @@
-var asap = require('asap')
-
 module.exports = function nodeify(fn) {
   return function () {
     var args = Array.prototype.slice.call(arguments)
@@ -14,7 +12,7 @@ module.exports = function nodeify(fn) {
           reject(ex)
         })
       } else {
-        asap(function () {
+        process.nextTick(function () {
           callback.call(ctx, ex)
         })
       }
@@ -26,11 +24,11 @@ function nodeifyPromise(promise, callback, ctx) {
   if (typeof callback != 'function') return promise
 
   promise.then(function (value) {
-    asap(function () {
+    process.nextTick(function () {
       callback.call(ctx, null, value)
     })
   }, function (err) {
-    asap(function () {
+    process.nextTick(function () {
       callback.call(ctx, err)
     })
   })
