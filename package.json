@@ -1,6 +1,6 @@
 {
   "name": "then-nodeify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "nodeify from then/Promise, all by itself",
   "main": "index.js",
   "scripts": {
