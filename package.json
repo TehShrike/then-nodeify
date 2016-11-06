@@ -1,7 +1,7 @@
 {
   "name": "then-nodeify",
   "version": "1.0.0",
-  "description": "denodeify from then/Promise, all by itself",
+  "description": "nodeify from then/Promise, all by itself",
   "main": "index.js",
   "scripts": {
     "test": "tape test.js | faucet"
@@ -13,7 +13,8 @@
   "keywords": [
     "promise",
     "then",
-    "denodeify"
+    "denodeify",
+    "nodeify"
   ],
   "author": "TehShrike",
   "license": "WTFPL",
